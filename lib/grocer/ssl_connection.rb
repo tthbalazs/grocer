@@ -21,7 +21,7 @@ module Grocer
     end
 
     def connect
-      context = OpenSSL::SSL::SSLContext.new
+      context = OpenSSL::SSL::SSLContext.new(:TLSv1)
 
       if certificate
 
